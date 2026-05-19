@@ -388,7 +388,7 @@ function FullHeatmap() {
                 Rs {s.marketCap} Cr · {(s.weight * 100).toFixed(0)}% weight
               </div>
             </div>
-            <div style={{ width: 200 }}>
+            <div className="rank-spark" style={{ width: 200 }}>
               <BulletBar value={s.performance} min={-5} max={5} />
             </div>
             <div className={`pct ${s.performance >= 0 ? "up" : "down"}`}>

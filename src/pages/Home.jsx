@@ -78,7 +78,7 @@ export function HomePage() {
           borderBottom: "1px solid var(--rule-cream)",
         }}
       >
-        <div className="wrap" style={{ padding: "32px 0" }}>
+        <div className="wrap market-snap-section">
           <MarketSnapshot />
         </div>
       </section>
@@ -267,7 +267,7 @@ function HomeIndexCard({ winners, losers }) {
                 {c.symbol} · {sectorName(c.sector)}
               </div>
             </div>
-            <div style={{ width: 64, opacity: 0.85 }}>
+            <div className="rank-spark" style={{ width: 64, opacity: 0.85 }}>
               <Sparkline
                 data={c.spark}
                 width={64}
@@ -313,7 +313,7 @@ function MarketSnapshot() {
   return (
     <div className="market-snap-wrap">
     <div className="market-snap-inner">
-      <div>
+      <div className="market-snap-title">
         <div className="eyebrow">
           <span className="bar"></span>MARKET
         </div>
@@ -346,7 +346,7 @@ function MarketSnapshot() {
           </div>
         </div>
       ))}
-      <div className="meta no-wrap">
+      <div className="meta no-wrap market-snap-updated">
         LAST UPDATED
         <br />
         <span className="ink-1" style={{ fontSize: 13, letterSpacing: "-0.005em" }}>
